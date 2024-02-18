@@ -1,0 +1,32 @@
+# Terraform files
+.terraform
+terraform.tfstate
+terraform.tfvars
+*.tfstate*
+.terragrunt
+.terragrunt-cache
+
+.idea
+*.iml
+vendor
+
+# Folder used to store temporary test data by Terratest
+.test-data
+
+# Created by the serverless-app module
+deployment-package.zip
+
+# Compiled javascript
+*.d.ts
+
+# Node
+node_modules/
+
+# CDK Context & Staging files
+cdk.context.json
+.cdk.staging/
+cdk.out/
+
+# Ignore Terraform lock files, as we want to test the Terraform code in these repos with the latest provider
+# versions.
+.terraform.lock.hcl
